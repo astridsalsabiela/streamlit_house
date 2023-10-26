@@ -55,10 +55,14 @@ import seaborn as sns
 ```
 
 selanjutnya, jika menggunakan google colab maka harus mengimport file juga,
-`from google.colab import files`
+```
+from google.colab import files
+```
 
 dan mengupload token kaggle agar bisa mendownload dataset kaggle melalui google colab
-`files.upload()`
+```
+files.upload()
+```
 
 jika upload selesai, selanjutnya membuat sebuah folder untuk menyimpan file kaggle.son yang telah diupload
 ```
@@ -69,7 +73,9 @@ jika upload selesai, selanjutnya membuat sebuah folder untuk menyimpan file kagg
 ```
 
 selesai, lanjut untuk mendownload datasetsnya
-`!kaggle datasets download -d ahmedmmmahmoud/kc-house-data`
+```
+!kaggle datasets download -d ahmedmmmahmoud/kc-house-data
+```
 
 lalu ekstrak file yang telah didownload
 ```
@@ -79,7 +85,9 @@ lalu ekstrak file yang telah didownload
 ```
 
 load data, baca dataset ke dalam DataFrame Pandas
-`data = pd.read_csv('kc_house_data.csv')`
+```
+data = pd.read_csv('kc_house_data.csv')
+```
 
 lakukan pemeriksaan awal data, termasuk melihat struktur data, tipe data kolom, dan beberapa baris pertama data
 ```
@@ -88,10 +96,14 @@ data.info()
 ```
 
 jika ada kolom yang tidak relevan untuk analisis atau prediksi, anda bisa menghapusnya
-`data = data.drop(['id', 'date'], axis=1)`
+```
+data = data.drop(['id', 'date'], axis=1)
+```
 
 slanjutnya kita akan memeriksa apakah datasetsnya terdapat baris yang kosong atau null dengan menggunakan seaborn,
-`sns.heatmap(data.isnull())`
+```
+sns.heatmap(data.isnull())
+```
 ![Alt text](image-1.png)
 
 lanjut dengan data exploration,
@@ -104,7 +116,9 @@ sn.heatmap(data.corr(),annot=True)
 ![Alt text](image-2.png)
 
 hitung statistik deskriptif untuk variabel numerik
-`data.describe()`
+```
+data.describe()
+```
 
 ## Data Modeling
 Model Machine Learning, seperti Linear Regression, akan digunakan untuk memprediksi harga rumah berdasarkan atribut yang diberikan.
