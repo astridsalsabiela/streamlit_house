@@ -149,7 +149,9 @@ model.fit(X_train, y_train)
 ```
 
 Melakukan prediksi harga rumah
-`y_pred = model.predict(X_test)`
+```
+y_pred = model.predict(X_test)
+```
 
 ## Evaluation
 Secara singkat, inilah penjelasan singkat untuk metrik-metrik evaluasi dalam konteks regresi:
