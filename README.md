@@ -190,9 +190,13 @@ print("Mean Squared Error:", metrics.mean_squared_error(y_test,y_pred))
 ```
 
 dan menghasilkan,
+
 r_2 score is: 0.7066787500012532
+
 Mean Absolute Error: 126008.92653280184
+
 Mean Squared Error: 40597428449.48715
+
 Root Mean Squared Error: 201488.03549959772
 
 ## Deployment
