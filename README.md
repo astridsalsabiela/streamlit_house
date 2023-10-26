@@ -197,3 +197,5 @@ Root Mean Squared Error: 201488.03549959772
 
 ## Deployment
 Model yang telah dilatih akan dideploy dalam sebuah aplikasi atau platform yang memungkinkan pengguna untuk memasukkan atribut rumah dan mendapatkan estimasi harga.
+[My Prediction App](https://kc-house.streamlit.app/)
+![https://kc-house.streamlit.app/](image.png)
