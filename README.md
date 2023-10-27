@@ -54,36 +54,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ```
 
-selanjutnya, jika menggunakan google colab maka harus mengimport file juga,
-```
-from google.colab import files
-```
-
-dan mengupload token kaggle agar bisa mendownload dataset kaggle melalui google colab
-```
-files.upload()
-```
-
-jika upload selesai, selanjutnya membuat sebuah folder untuk menyimpan file kaggle.son yang telah diupload
-```
-!mkdir -p ~/.kaggle
-!cp kaggle.json ~/.kaggle/
-!chmod 600 ~/.kaggle/kaggle.json
-!ls ~/.kaggle
-```
-
-selesai, lanjut untuk mendownload datasetsnya
-```
-!kaggle datasets download -d ahmedmmmahmoud/kc-house-data
-```
-
-lalu ekstrak file yang telah didownload
-```
-!mkdir kc-house-data
-!unzip kc-house-data.zip -d kc-house-data
-!ls kc-house-data
-```
-
 load data, baca dataset ke dalam DataFrame Pandas
 ```
 data = pd.read_csv('kc_house_data.csv')
