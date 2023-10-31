@@ -125,8 +125,7 @@ plt.xlabel('Jumlah Kamar Tidur')
 plt.ylabel('Harga')
 plt.show()
 ```
-![image](![download](https://github.com/astridsalsabiela/streamlit_house/assets/148685629/6d6f75ae-1e32-41dc-b770-bfb95911f651)
-)
+![Alt text](download.png)
 
 ## Data Modeling
 Model Machine Learning, seperti Linear Regression, akan digunakan untuk memprediksi harga rumah berdasarkan atribut yang diberikan.
