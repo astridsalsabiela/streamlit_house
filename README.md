@@ -53,6 +53,31 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
+selanjutnya kita lakukan import file, dan upload file tersebut di google colab
+```
+from google.colab import files
+files.upload()
+```
+
+Setelah mengupload filenya, maka kita akan melanjutkan dengan membuat sebuah folder untuk menyimpan file kaggle.json yang sudah diupload tadi
+```
+!mkdir -p ~/.kaggle
+!cp kaggle.json ~/.kaggle/
+!chmod 600 ~/.kaggle/kaggle.json
+!ls ~/.kaggle
+```
+
+Selanjutnya kita akan mendownload datasetnya
+```
+!kaggle datasets download -d shmedmmmahmoud/kc-house-data
+```
+
+Ekstrak file yang sudah di download
+```
+!mkdir kc-house-data
+!unzip kc-house-data.zip -d kc-house-data
+!ls kc-house-data
+```
 
 load data, baca dataset ke dalam DataFrame Pandas
 ```
@@ -90,16 +115,16 @@ hitung statistik deskriptif untuk variabel numerik
 data.describe()
 ```
 
-EDA
+Analisis Data
 Perbandingan jumlah kamar tidur dengan harga
-'''
+```
 plt.figure(figsize=(10, 5))
 sn.boxplot(x=data['bedrooms'], y=data['price'])
 plt.title('Perbandingan Jumlah Kamar Tidur dengan Harga')
 plt.xlabel('Jumlah Kamar Tidur')
 plt.ylabel('Harga')
 plt.show()
-'''
+```
 ![image](download)
 
 ## Data Modeling
