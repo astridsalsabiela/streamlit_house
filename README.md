@@ -125,7 +125,7 @@ plt.title('Distribusi Harga Rumah')
 plt.xlabel('Harga')
 plt.show()
 ```
-![Alt text](![download (1)])(https://github.com/astridsalsabiela/streamlit_house/assets/148685629/c7a5ddce-f078-4697-aa56-f2b0cfb74a4e)
+![Alt text](download (1).png)
 
 
 Perbandingan jumlah kamar tidur dengan harga
