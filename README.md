@@ -116,6 +116,17 @@ data.describe()
 ```
 
 Analisis Data
+
+Distribusi harga rumah
+```
+plt.figure(figsize=(10, 5))
+sn.histplot(data['price'], kde=True)
+plt.title('Distribusi Harga Rumah')
+plt.xlabel('Harga')
+plt.show()
+![Alt text](download (1).png)
+```
+
 Perbandingan jumlah kamar tidur dengan harga
 ```
 plt.figure(figsize=(10, 5))
