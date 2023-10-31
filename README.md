@@ -70,7 +70,7 @@ jika ada kolom yang tidak relevan untuk analisis atau prediksi, anda bisa mengha
 data = data.drop(['id', 'date'], axis=1)
 ```
 
-slanjutnya kita akan memeriksa apakah datasetsnya terdapat baris yang kosong atau null dengan menggunakan seaborn,
+selanjutnya kita akan memeriksa apakah datasetsnya terdapat baris yang kosong atau null dengan menggunakan seaborn,
 ```
 sns.heatmap(data.isnull())
 ```
@@ -89,6 +89,18 @@ hitung statistik deskriptif untuk variabel numerik
 ```
 data.describe()
 ```
+
+EDA
+Perbandingan jumlah kamar tidur dengan harga
+'''
+plt.figure(figsize=(10, 5))
+sn.boxplot(x=data['bedrooms'], y=data['price'])
+plt.title('Perbandingan Jumlah Kamar Tidur dengan Harga')
+plt.xlabel('Jumlah Kamar Tidur')
+plt.ylabel('Harga')
+plt.show()
+'''
+![image](download)
 
 ## Data Modeling
 Model Machine Learning, seperti Linear Regression, akan digunakan untuk memprediksi harga rumah berdasarkan atribut yang diberikan.
