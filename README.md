@@ -124,8 +124,8 @@ sn.histplot(data['price'], kde=True)
 plt.title('Distribusi Harga Rumah')
 plt.xlabel('Harga')
 plt.show()
-![Alt text](download (1).png)
 ```
+![Alt text](download (1).png)
 
 Perbandingan jumlah kamar tidur dengan harga
 ```
@@ -149,7 +149,7 @@ from sklearn.linear_model import LinearRegression
 
 Memilih atribut yang akan digunakan untuk prediksi
 ```
-features = ['sqft_living', 'bedrooms', 'bathrooms', 'floors', 'condition']
+features = ['sqft_living', 'bedrooms', 'bathrooms', 'floors', 'condition', 'grade','yr_built']
 X = data[features]
 y = data['price']
 ```
@@ -216,6 +216,16 @@ Mean Absolute Error: 126008.92653280184
 Mean Squared Error: 40597428449.48715
 
 Root Mean Squared Error: 201488.03549959772
+
+
+```
+plt.xticks(rotation=45)
+plt.bar(names,values)
+plt.xlabel("Multiple Algorithms")
+plt.ylabel("r_2 scores")
+plt.show()
+```
+![Alt text](download (2).png)
 
 ## Deployment
 Model yang telah dilatih akan dideploy dalam sebuah aplikasi atau platform yang memungkinkan pengguna untuk memasukkan atribut rumah dan mendapatkan estimasi harga.
