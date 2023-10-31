@@ -173,26 +173,7 @@ y_pred = model.predict(X_test)
 ```
 
 ## Evaluation
-Secara singkat, inilah penjelasan singkat untuk metrik-metrik evaluasi dalam konteks regresi:
-1. **R-squared (R2) Score**:
-   - R2 Score mengukur sejauh mana model regresi cocok dengan data aktual.
-   - Nilai R2 berkisar antara 0 hingga 1, di mana 1 menunjukkan model yang sempurna cocok.
-   - Semakin mendekati 1, semakin baik modelnya.
-2. **Mean Absolute Error (MAE)**:
-   - MAE adalah rata-rata dari selisih absolut antara prediksi model dan nilai sebenarnya.
-   - MAE mengukur kesalahan prediksi dalam skala asli.
-   - Semakin rendah MAE, semakin baik modelnya.
-3. **Mean Squared Error (MSE)**:
-   - MSE adalah rata-rata dari kuadrat kesalahan prediksi.
-   - MSE memberikan lebih banyak penalti terhadap kesalahan besar dibandingkan dengan MAE.
-   - Semakin rendah MSE, semakin baik modelnya.
-4. **Root Mean Squared Error (RMSE)**:
-   - RMSE adalah akar kuadrat dari MSE.
-   - RMSE mengukur kesalahan prediksi dalam skala asli, seperti MAE.
-   - RMSE lebih sensitif terhadap kesalahan besar karena mengakar kuadrat kesalahan.
-   - Semakin rendah RMSE, semakin baik modelnya.
-
-Jadi, R2 Score digunakan untuk mengukur sejauh mana model cocok dengan data, sementara MAE, MSE, dan RMSE digunakan untuk mengukur besarnya kesalahan prediksi dalam berbagai skala. Semua metrik ini digunakan untuk mengevaluasi kinerja model regresi, dan tujuan utamanya adalah untuk meminimalkan kesalahan prediksi.
+R2 Score digunakan untuk mengukur sejauh mana model cocok dengan data, sementara MAE, MSE, dan RMSE digunakan untuk mengukur besarnya kesalahan prediksi dalam berbagai skala. Semua metrik ini digunakan untuk mengevaluasi kinerja model regresi, dan tujuan utamanya adalah untuk meminimalkan kesalahan prediksi.
 
 Maka untuk dataset regregi seperti KC House, metrik yang umum digunakan untuk dievaluasi menggunakan metrik seperti Mean Absolute Error (MAE) atau Root Mean Squared Error (RMSE), R-squared (R2) untuk mengukur seberapa akurat model dalam memprediksi harga rumah.
 
@@ -226,7 +207,7 @@ plt.xlabel("Multiple Algorithms")
 plt.ylabel("r_2 scores")
 plt.show()
 ```
-![Alt text](download(2).png)
+![Alt text](download.2.png)
 
 
 ## Deployment
