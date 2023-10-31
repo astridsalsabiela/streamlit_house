@@ -125,7 +125,8 @@ plt.title('Distribusi Harga Rumah')
 plt.xlabel('Harga')
 plt.show()
 ```
-![Alt text](download (1).png)
+![Alt text](![download (1)](https://github.com/astridsalsabiela/streamlit_house/assets/148685629/1bb8d805-53b2-4c5b-9547-5a58e643d3c8)
+)
 
 Perbandingan jumlah kamar tidur dengan harga
 ```
@@ -225,7 +226,8 @@ plt.xlabel("Multiple Algorithms")
 plt.ylabel("r_2 scores")
 plt.show()
 ```
-![Alt text](download (2).png)
+![Alt text](![download (2)](https://github.com/astridsalsabiela/streamlit_house/assets/148685629/f886ea31-5eb0-45fd-980f-5de67c0b27d8)
+)
 
 ## Deployment
 Model yang telah dilatih akan dideploy dalam sebuah aplikasi atau platform yang memungkinkan pengguna untuk memasukkan atribut rumah dan mendapatkan estimasi harga.
