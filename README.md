@@ -24,22 +24,22 @@ Dataset yang digunakan dalam proyek ini adalah data rumah di wilayah King County
 [kaggle](https://www.kaggle.com/datasets/ahmedmmmahmoud/kc-house-data)
 
 ### Dalam proyek Price Prediction dari data KC House, variabel-variabel yang biasanya digunakan untuk memprediksi harga rumah (harga properti) termasuk:
-1. Price: Variabel target, yaitu harga rumah yang ingin diprediksi.
-2. Bedrooms: Jumlah kamar tidur di dalam rumah.
-3. Bathrooms: Jumlah kamar mandi di dalam rumah.
-4. Sqft_living: Luas area rumah (dalam satuan kaki persegi).
-5. Sqft_lot: Luas area tanah (dalam satuan kaki persegi).
-6. Floors: Jumlah lantai rumah.
-7. Condition: Kondisi umum rumah.
-8. Grade: Peringkat kualitas rumah.
-9. View: Apakah rumah memiliki pemandangan (misalnya, pemandangan pegunungan, laut, dll.).
-10. Waterfront: Apakah rumah berada di tepi pantai.
-11. Year Built: Tahun pembangunan rumah.
-12. Year Renovated: Tahun renovasi terakhir.
-13. Zipcode: Kode pos wilayah rumah.
-14. Lat: Koordinat lintang (latitude) lokasi rumah.
-15. Long: Koordinat bujur (longitude) lokasi rumah.
-16. Date: Tanggal penjualan atau catatan penjualan.
+1. Price: Variabel target, yaitu harga rumah yang ingin diprediksi. (contoh : 500,000 USD)[Numerik]
+2. Bedrooms: Jumlah kamar tidur di dalam rumah.(contoh : 3) [Numerik]
+3. Bathrooms: Jumlah kamar mandi di dalam rumah. (contoh : 2.5) [Numerik]
+4. Sqft_living: Luas area rumah (dalam satuan kaki persegi). (contoh : 2,000 sqft) [Numerik]
+5. Sqft_lot: Luas area tanah (dalam satuan kaki persegi). (contoh 5,000 sqft) [Numerik]
+6. Floors: Jumlah lantai rumah. (contoh : 2) [Numerik]
+7. Condition: Kondisi umum rumah. (contoh : baik(good))
+8. Grade: Peringkat kualitas rumah. (contoh : 8) [Numerik]
+9. View: Apakah rumah memiliki pemandangan (misalnya, pemandangan pegunungan, laut, dll.). (contoh : pemandangan gunung (mountain view))
+10. Waterfront: Apakah rumah berada di tepi pantai. (contoh : tidak(no))
+11. Year Built: Tahun pembangunan rumah. (contoh : 1990) [Numerik]
+12. Year Renovated: Tahun renovasi terakhir. (contoh : 2010) [Numerik]
+13. Zipcode: Kode pos wilayah rumah. (Contoh : 98001) [Numerik]
+14. Lat: Koordinat lintang (latitude) lokasi rumah. (contoh : 47.1234) [Numerik]
+15. Long: Koordinat bujur (longitude) lokasi rumah. (contoh : -122.3456) [Numerik]
+16. Date: Tanggal penjualan atau catatan penjualan. (contoh : 2022-05-15)
 
 ## Data Preparation
 ### Data Collection
@@ -213,7 +213,7 @@ plt.show()
 ## Deployment
 Model yang telah dilatih akan dideploy dalam sebuah aplikasi atau platform yang memungkinkan pengguna untuk memasukkan atribut rumah dan mendapatkan estimasi harga.
 
-[My Prediction App[]([https://kc-house.streamlit.app/)](https://apphouse-tvb9zkr3e7brzjxrgo3fmu.streamlit.app/)]
+[My Prediction App[([https://kc-house.streamlit.app/)](https://apphouse-tvb9zkr3e7brzjxrgo3fmu.streamlit.app/)]
 ![image]![image](https://github.com/astridsalsabiela/streamlit_house/assets/148685629/04066413-d992-4825-b75b-07b9dc6d4993)
 
 
